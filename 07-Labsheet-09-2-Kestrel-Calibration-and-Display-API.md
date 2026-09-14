@@ -222,6 +222,7 @@ app.Run();
 6. เลือกแท็บ Network
 7. กด F5 เพื่อ Refresh หน้าเว็บ
 8. สังเกต Raw HTTP Response Headers
+<img width="1917" height="861" alt="image" src="https://github.com/user-attachments/assets/c7c91451-0432-475a-b09f-6453734fc11b" />
 
 
 ---
@@ -292,6 +293,7 @@ Server: Kestrel
 
 {"raw":2048,"calibrated":50.0,"unit":"%","displayMsg":"SYSTEM READY","timestamp":"2026-09-13T..."}
 ```
+<img width="1150" height="225" alt="image" src="https://github.com/user-attachments/assets/7ba79fdd-7f19-4baf-b3cb-5ef0aa860c4b" />
 
 ---
 
@@ -318,6 +320,7 @@ Server: Kestrel
 
 {"status":"success","settings":{"rawMin":200,"rawMax":3800,"scaleMin":0,"scaleMax":1000,"unit":"RPM"}}
 ```
+<img width="782" height="112" alt="image" src="https://github.com/user-attachments/assets/bc57662f-db12-4f9f-871b-142911466ac4" />
 
 ---
 
@@ -343,6 +346,8 @@ Server: Kestrel
 
 {"status":"success","current":"Hello OLED"}
 ```
+<img width="452" height="202" alt="image" src="https://github.com/user-attachments/assets/323d9761-d9d2-46f6-87a7-a5ee9afee671" />
+
 
 ---
 
@@ -368,6 +373,7 @@ Server: Kestrel
      -d '{"rawMin": 4000, "rawMax": 1000, "scaleMin": 0, "scaleMax": 100, "unit": "%"}'
    ```
    * **ผลที่คาดหวัง:** เซิร์ฟเวอร์ต้องตอบกลับด้วย **`400 Bad Request`** พร้อมข้อความเตือน `"RawMax ต้องมีค่ามากกว่า RawMin เสมอ!"` โดยที่เซิร์ฟเวอร์ Kestrel **ไม่ล่ม (No Server Crash)**!
+<img width="688" height="163" alt="image" src="https://github.com/user-attachments/assets/28e846d6-f3b6-4aa1-8dd9-8f2f9fa5b0ad" />
 
 2. **ทดสอบส่งข้อความว่างเปล่า:**
    ```powershell
@@ -376,6 +382,7 @@ Server: Kestrel
      -d '{"message":""}'
    ```
    * **ผลที่คาดหวัง:** ได้รับ **`400 Bad Request`** แจ้งว่าข้อความต้องไม่ว่างเปล่า
+<img width="708" height="196" alt="image" src="https://github.com/user-attachments/assets/7f1315f4-ebdc-46f9-a7eb-703528162ddd" />
 
 ---
 
